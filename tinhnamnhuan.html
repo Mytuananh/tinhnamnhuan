@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Năm Nhuận</title>
+</head>
+<body>
+<button type="button" onclick="namnhuan()">Kiểm Tra</button>
+<script>
+    function namnhuan() {
+        let a = prompt('năm')
+        aa = parseInt(a)
+        if (aa % 4 == 0) {
+            if (aa % 100 == 0) {
+                if (aa % 400 == 0) {
+                    alert(aa + 'là năm nhuận')
+                } else {
+                    alert(aa + 'không phải năm nhuận')
+                }
+            }
+            else
+                {
+                    alert(aa + 'là năm nhuận')
+                }
+            } else {
+                alert(aa + 'không phải năm nhuận')
+            }
+        }
+</script>
+</body>
+</html>
